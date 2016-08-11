@@ -234,6 +234,10 @@ module Soapforce
       false
     end
 
+    def convert_lead(params)
+      call_soap_api(:convert_lead, params)
+    end
+
     # Public: Insert a new record.
     #
     # sobject - String name of the sobject.
